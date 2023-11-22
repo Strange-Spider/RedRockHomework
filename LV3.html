@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a = {n:1};
+        var b = a;
+        a.x = a = {n:2};//先向a中添加x属性，再给a赋值为{n:2}
+        console.log(a);
+        console.log(b);
+        a.n = 3;//向x属性赋值你{n：3}，把a赋给b，打印输出b
+        console.log(b); 
+        /* 
+        {n:2}
+        {n:1,x:{n:3}}
+        {n:1,x:{n:3}}
+          
+        */
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

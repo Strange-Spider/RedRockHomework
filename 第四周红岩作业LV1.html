@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let obj = new Object();
+        obj.name = 'Max';
+        obj.age = '18';
+    console.log(obj);
+
+        let objk = {
+            name : 'Max',
+            age : '18'
+        };
+    console.log(objk);
+
+        function Person(name,age,gender){
+            this.name = name
+            this.age = age
+            this.sayname = ()=>{
+                 console.log(this.name) 
+            }
+        }
+        const p1 = new Person('MAX',18)
+        const p2 = new Person('Dustin',30)
+        console.log(p1); 
+    </script>
+</head>
+<body>
+     
+</body>
+</html>
