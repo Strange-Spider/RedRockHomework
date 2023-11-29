@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        浅拷贝
+        未开辟新的内寸空间，改变新对象的属性会影响原对象
+        不安全
+        */
+        const loser= {
+            name:'Tony',
+            age:100
+        };//声明变量loser
+        const winner = {};//声明变量winner
+        Object.assign(winner,loser);//将loser的属性复制并分配给winner
+        console.log(winner);//输出winner
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
